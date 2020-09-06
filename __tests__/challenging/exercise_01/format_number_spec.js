@@ -4,7 +4,6 @@ import formatNumber from '../../../src/exercise_01/numberFormatter';
 describe('We would like to format number', () => {
   it('should format number with dollar sign if currency option is specified', () => {
     const formatted = formatNumber(2, { currency: true });
-
     expect(formatted).toEqual('$ 2.00');
   });
 
